@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TioGames - Free Games & Apps</title>
+    <title>TioGames - Juegos Gratis Online</title>
+
+    <!-- SEO básico -->
     <meta name="description" content="Descarga los mejores juegos totalmente gratis y libre de virus">
+    <meta name="keywords" content="juegos online, juegos gratis, juegos para navegador, tiogames, TioGames, tio games, Tio Games, TIO GAMES, TIOGAMES, free">
+    
+    <!-- Open graph (para discord, facebook, etc) -->
     <meta property="og:image" content="">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:title" content="TioGames - Free Games & Apps">
+    <meta property="og:title" content="TioGames - Juegos Gratis Online">
     <meta property="og:description" content="Descarga los mejores juegos totalmente gratis y libre de virus">
     <meta property="og:url" content="https://tiogames.netlify.app/">
     <meta property="og:type" content="website">
+    
+    <!-- Estilos y fuentes -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jersey+15&family=Ledger&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="div" class="aviso">
+
+    <div id="div" class="aviso" role="alert">
         <p>Esta página web aún está en construcción. Es posible que encuentres algunos errores o bugs.</p>
         <button id="cerrar">Cerrar</button>
     </div>
+
     <div class="container">
         <header>
-            <h1 class="logo">
-                <a title="TioGames | Home" href="index.html">TIO GAMES BETA</a>
-            </h1>
+            <h1 class="logo"><a title="TioGames | Home" href="index.html">TIO GAMES BETA</a></h1>
             <nav class="sub" aria-label="Navegacion principal">
                 <ul>
-                    <li><a title="Ir a inicio" href="index.html">Inicio</a></li>
-                    <li><a title="Ir a DMCA" href="#">DMCA</a></li>
-                    <li><a title="Ir al discord" href="https://discord.gg/NxuRzgxFA3">Discord</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">DMCA</a></li>
+                    <li><a href="https://discord.gg/NxuRzgxFA3">Discord</a></li>
                 </ul>
             </nav>
         </header>
-        <nav class="filtros-categorias">
+
+        <nav class="filtros-categorias" aria-label="Filtrar juegos por categoria">
             <ul>
               <li><button data-filtro="todos" class="activo">Todos</button></li>
               <li><button data-filtro="b-r">Bajos requisitos</button></li>
@@ -61,6 +70,7 @@
               <li><button data-filtro="mundoabierto">Mundo Abierto</button></li>
             </ul>
         </nav>
+
         <div class="re-search">
             <form role="search" aria-label="Buscar juegos">
                 <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
@@ -68,27 +78,26 @@
         </div>
 
         <main>
-            
             <h2>Ultimos juegos subidos</h2>
-            <div id="juegos-container" class="grid-container">
-                
-            </div>
-            <div id="paginacion" class="paginacion">
-
-            </div>
+            <section id="juegos-container" class="grid-container"></section>
+            <div id="paginacion" class="paginacion"></div>
         </main>
-        <picture class="publicidad">
-            <a href="https://discord.gg/NxuRzgxFA3"><img src="assets/publicidad discord.png" alt="Unete a nuestro servidor de discord"></a>
-        </picture>
+
+        <aside class="publicidad">
+            <a href="https://discord.gg/NxuRzgxFA3">
+                <img src="assets/publicidad discord.png" alt="Unete a nuestro servidor de discord">
+            </a>
+        </aside>
+
         <footer>
             <div class="sub-fo">
                 <div class="links-footer">
                     <h4>Info legal</h4>
                     <ul>
-                        <li><a href="#">Terminos y condiciones</a></li>
-                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Contacto</a></li>
-                        <li><a href="pags/dmca.html">DMCA</a></li>
+                        <li><a href="#">DMCA</a></li>
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -113,8 +122,6 @@
     </div>
 
     <button id="btn-subir" title="Volver arriba">Subir</button>
-
     <script src="js/main.js"></script>
-
 </body>
 </html>
