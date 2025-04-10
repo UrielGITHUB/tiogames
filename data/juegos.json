@@ -1,14 +1,30 @@
 [
     {
-      "id": "geometry-dash",
-      "titulo": "Geometry Dash",
+      "id": "schedule-i",
+      "titulo": "Schedule I",
       "fecha": "10-04-25",
-      "version": "2.207",
-      "descripcion": "Geometry Dash (anteriormente llamado 'Geometry Jump') es un videojuego de plataformas y videojuego rítmico creado en 2013 por el desarrollador sueco Robert Topala (más conocido como RobTop), y posteriormente desarrollado por su empresa independiente RobTop Games.",
-      "imagen": "assets/geometry dash.jpg",
+      "version": "0.3.3f14",
+      "peso": "1.88 GB",
+      "plataforma": "PC",
+      "descripcion": "Desde un pequeño traficante hasta un capo, fabrica y distribuye una amplia gama de drogas por el descuidado pueblo de Hyland Point. Expande tu imperio con propiedades, negocios, empleados y mucho más.",
+      "imagen": "assets/schedule.jpg",
       "requisitos": "...",
       "pass": "No tiene",
-      "categorias": ["b-r","plataforma", "arcade", "casual"],
-      "link": "https://ouo.io/KXNYHvM"
+      "categorias": ["m-r","simulacion", "accion", "mundoabierto","aventura"],
+      "link": "https://ouo.io/Oj3McGa"
+    },
+    {
+        "id": "geometry-dash",
+        "titulo": "Geometry Dash",
+        "fecha": "10-04-25",
+        "version": "2.207",
+        "peso": "300 MB",
+        "plataforma": "PC",
+        "descripcion": "Geometry Dash (anteriormente llamado 'Geometry Jump') es un videojuego de plataformas y videojuego rítmico creado en 2013 por el desarrollador sueco Robert Topala (más conocido como RobTop), y posteriormente desarrollado por su empresa independiente RobTop Games.",
+        "imagen": "assets/geometry dash.jpg",
+        "requisitos": "...",
+        "pass": "No tiene",
+        "categorias": ["b-r","plataforma", "arcade", "casual"],
+        "link": "https://ouo.io/KXNYHvM"
     }
 ]
