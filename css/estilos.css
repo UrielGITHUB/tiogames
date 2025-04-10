@@ -76,6 +76,7 @@ header ul {
 
 header ul li a {
     font-size: 16px;
+    font-weight: bold;
 }
 
 header ul li a:hover {
@@ -84,8 +85,8 @@ header ul li a:hover {
 
 /* LOGO */
 .logo {
-    font-size: 24px;
-    font-weight: bolder;
+    width: 50px;
+    height: auto;
 }
 
 /* BUSCADOR */
