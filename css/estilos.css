@@ -290,10 +290,9 @@ main h2 {
 
 .publicidad {
     width: 100%;
-    border: 1px solid rgb(39, 39, 39);
     margin: 50px 0;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .publicidad img {
