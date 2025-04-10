@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: sans-serif;
     color: #000;
     background-color: #1d1d1d;
 }
@@ -140,7 +140,7 @@ nav {
 }
 
 .filtros-categorias button {
-    padding: 5px 15px;
+    padding: 10px 15px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -149,7 +149,6 @@ nav {
     font-weight: bold;
     transition: background-color 0.3s ease;
     font-size: 12px;
-    font-family: "Rubik";
 }
 
 .filtros-categorias button:hover,
@@ -334,13 +333,14 @@ footer {
     flex-direction: column;
     border-left: 3px solid rgba(117, 117, 117, 0.068);
     padding-left: 30px;
-    gap: 5px;
+    gap: 15px;
 }
 
 .links-footer ul,
 .redes-sociales ul {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .links-footer ul li a,
@@ -421,6 +421,10 @@ footer {
     gap: 30px;
 }
 
+.aviso p {
+    font-size: 16px;
+}
+
 .aviso button {
     background-color: transparent;
     border: 1px solid black;
@@ -439,7 +443,7 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     z-index: 1000;
     border: none;
@@ -447,7 +451,6 @@ footer {
     cursor: pointer;
     font-size: 20px;
     display: none;
-    font-family: "Rubik";
     font-weight: 500;
     color: white;
 }
