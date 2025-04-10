@@ -170,6 +170,10 @@ main h2 {
     font-weight: bold;
 }
 
+.game {
+    padding: 50px 0;
+}
+
 .aside-left {
     width: 70%;
     float: left;
