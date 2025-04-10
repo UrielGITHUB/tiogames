@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="div" class="aviso">
-        <p>Esta pagina web aun esta en construccion, es posible que encuentres algunos bugs</p>
+        <p>Esta página web aún está en construcción. Es posible que encuentres algunos errores o bugs.</p>
         <button id="cerrar">Cerrar</button>
     </div>
     <div class="container">
@@ -27,14 +27,11 @@
             <h1 class="logo">
                 <a title="TioGames | Home" href="index.html">TIO GAMES BETA</a>
             </h1>
-            <form role="search" aria-label="Buscar juegos">
-                <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
-            </form>
-            <nav aria-label="Navegacion principal">
+            <nav class="sub" aria-label="Navegacion principal">
                 <ul>
                     <li><a title="Ir a inicio" href="index.html">Inicio</a></li>
-                    <li><a title="Ir a DMCA" href="pags/dmca.html">DMCA</a></li>
-                    <li><a title="Ir al discord" href="#">Discord</a></li>
+                    <li><a title="Ir a DMCA" href="#">DMCA</a></li>
+                    <li><a title="Ir al discord" href="https://discord.gg/NxuRzgxFA3">Discord</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,17 +43,29 @@
               <li><button data-filtro="a-r">Altos requisitos</button></li>
               <li><button data-filtro="accion">Acción</button></li>
               <li><button data-filtro="aventura">Aventura</button></li>
+              <li><button data-filtro="estrategia">Estrategia</button></li>
               <li><button data-filtro="puzzle">Puzzle</button></li>
               <li><button data-filtro="carreras">Carreras</button></li>
               <li><button data-filtro="deporte">Deporte</button></li>
+              <li><button data-filtro="simulacion">Simulacion</button></li>
+              <li><button data-filtro="rpg">RPG</button></li>
+              <li><button data-filtro="shooter">Shooter</button></li>
               <li><button data-filtro="pelea">Pelea</button></li>
               <li><button data-filtro="terror">Terror</button></li>
+              <li><button data-filtro="sandbox">Sandbox</button></li>
+              <li><button data-filtro="casual">Casual</button></li>
+              <li><button data-filtro="arcade">Arcade</button></li>
               <li><button data-filtro="plataforma">Plataforma</button></li>
               <li><button data-filtro="indie">Indie</button></li>
               <li><button data-filtro="multijugador">Multijugador</button></li>
               <li><button data-filtro="mundoabierto">Mundo Abierto</button></li>
             </ul>
         </nav>
+        <div class="re-search">
+            <form role="search" aria-label="Buscar juegos">
+                <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
+            </form>
+        </div>
 
         <main>
             
@@ -85,7 +94,7 @@
                 <div class="redes-sociales">
                     <h4>Redes sociales</h4>
                     <ul>
-                        <li><a href="#">Discord</a></li>
+                        <li><a href="https://discord.gg/NxuRzgxFA3">Discord</a></li>
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -103,7 +112,7 @@
         </footer>
     </div>
 
-    <button id="btn-subir" title="Volver arriba">V</button>
+    <button id="btn-subir" title="Volver arriba">Subir</button>
 
     <script src="js/main.js"></script>
 
