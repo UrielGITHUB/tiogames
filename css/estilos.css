@@ -254,12 +254,11 @@ main h2 {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    padding: 0px 50px;
     background-color: transparent;
 }
 
 #contenedor-juego h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: rgb(255, 255, 255);
 }
 
@@ -290,6 +289,10 @@ main h2 {
     height: auto;
 }
 
+.game {
+    padding: 50px 50px;
+}
+
 /* ======================= */
 /* ==== BOTÓN DESCARGA === */
 /* ======================= */
@@ -303,6 +306,7 @@ main h2 {
     align-self: flex-start;
     margin-top: 50px;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .boton-descarga:hover {

@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="descripcion">Peso: ${juego.peso}</p>
             <p class="descripcion">Fecha de actualizacion: ${juego.fecha}</p>
             <p class="descripcion">Version: ${juego.version}</p>
-            <h3>Requisitos</h3>
+            <h3>Requisitos:</h3>
             <p class="descripcion">${juego.requisitos}</p>
-            <h3>Contraseña</h3>
+            <h3>Contraseña:</h3>
             <p class="descripcion">${juego.pass}</p>
             <a href="${juego.link}" target="_blank" class="boton-descarga">Links de descarga</a>
-            <h3>Comentarios</h3>
+            <h3>Comentarios:</h3>
           `
           ;
         } else {
