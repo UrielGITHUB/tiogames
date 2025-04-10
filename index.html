@@ -29,9 +29,13 @@
         <button id="cerrar">Cerrar</button>
     </div>
 
+
     <div class="container">
         <header>
             <a title="TioGames | Home" href="index.html"><img class="logo" src="assets/logo.png"></a>
+            <form role="search" aria-label="Buscar juegos">
+                <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
+            </form>
             <nav class="sub" aria-label="Navegacion principal">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -69,24 +73,24 @@
             </ul>
         </nav>
 
-        <div class="re-search">
-            <form role="search" aria-label="Buscar juegos">
-                <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
-            </form>
-        </div>
-
         <main>
-            <h2>Destacados</h2>
-            <h2>Últimos juegos</h2>
-            <section id="juegos-container" class="grid-container"></section>
-            <div id="paginacion" class="paginacion"></div>
+            <div class="aside-left">
+                <h2>Últimas actualizaciones</h2>
+                <section id="juegos-container" class="grid-container"></section>
+                <div id="paginacion" class="paginacion"></div>
+                <aside class="publicidad">
+                    <a href="https://discord.gg/NxuRzgxFA3">
+                        <img src="assets/publicidad discord.png" alt="Unete a nuestro servidor de discord">
+                    </a>
+                </aside>
+            </div>
+            
+            <aside class="aside-right">
+                <h2>Destacados</h2>
+            </aside>
         </main>
 
-        <aside class="publicidad">
-            <a href="https://discord.gg/NxuRzgxFA3">
-                <img src="assets/publicidad discord.png" alt="Unete a nuestro servidor de discord">
-            </a>
-        </aside>
+        
 
         <footer>
             <div class="sub-fo">
