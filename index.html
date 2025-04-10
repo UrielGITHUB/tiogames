@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jersey+15&family=Ledger&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div" class="aviso">
+        <p>Esta pagina web aun esta en construccion, es posible que encuentres algunos bugs</p>
+        <button id="cerrar">Cerrar</button>
+    </div>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+                <a title="TioGames | Home" href="index.html">TIO GAMES BETA</a>
+            </h1>
+            <form role="search" aria-label="Buscar juegos">
+                <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
+            </form>
+            <nav aria-label="Navegacion principal">
+                <ul>
+                    <li><a title="Ir a inicio" href="index.html">Inicio</a></li>
+                    <li><a title="Ir a DMCA" href="pags/dmca.html">DMCA</a></li>
+                    <li><a title="Ir al discord" href="#">Discord</a></li>
+                </ul>
+                <a href="#">Hola mundo</a>
+            </nav>
+        </header>
+        <nav class="filtros-categorias">
+            <ul>
+              <li><button data-filtro="todos" class="activo">Todos</button></li>
+              <li><button data-filtro="b-r">Bajos requisitos</button></li>
+              <li><button data-filtro="m-r">Medios requisitos</button></li>
+              <li><button data-filtro="a-r">Altos requisitos</button></li>
+              <li><button data-filtro="accion">Acción</button></li>
+              <li><button data-filtro="aventura">Aventura</button></li>
+              <li><button data-filtro="puzzle">Puzzle</button></li>
+              <li><button data-filtro="carreras">Carreras</button></li>
+              <li><button data-filtro="deporte">Deporte</button></li>
+              <li><button data-filtro="pelea">Pelea</button></li>
+              <li><button data-filtro="terror">Terror</button></li>
+              <li><button data-filtro="plataforma">Plataforma</button></li>
+              <li><button data-filtro="indie">Indie</button></li>
+              <li><button data-filtro="multijugador">Multijugador</button></li>
+              <li><button data-filtro="mundoabierto">Mundo Abierto</button></li>
+            </ul>
+        </nav>
+
+        <main>
+            
+            <h2>Ultimos juegos subidos</h2>
+            <div id="juegos-container" class="grid-container">
+                
+            </div>
+            <div id="paginacion" class="paginacion">
+
+            </div>
+        </main>
+        <picture class="publicidad">
+            <a href="#"><img src="assets/hbo-728x90-1.webp" alt="Unete a nuestro servidor de discord"></a>
+        </picture>
+        <footer>
+            <div class="sub-fo">
+                <div class="links-footer">
+                    <h4>Info legal</h4>
+                    <ul>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="pags/dmca.html">DMCA</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociales">
+                    <h4>Redes sociales</h4>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociales">
+                    <h4>Navegacion rapida</h4>
+                    <ul>
+                        <li><a href="#">Juegos</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inf-fo">
+                <p>© 2025 TioGames. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <button id="btn-subir" title="Volver arriba">V</button>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
