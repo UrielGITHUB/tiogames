@@ -1,5 +1,33 @@
 [
     {
+      "id": "brotato",
+      "titulo": "Brotato",
+      "fecha": "10-04-25",
+      "version": "1.1.10.2a",
+      "peso": "200 MB",
+      "plataforma": "PC",
+      "descripcion": "Brotato es un roguelite de disparos en el que te moverás de arriba abajo del escenario. Encarna a una patata con 6 armas simultáneas para hacer frente a los alienígenas. Elige entre una variedad de características y objetos para crear combinaciones únicas y sobrevivir hasta que acudan los refuerzos.",
+      "imagen": "assets/brotato.jpg",
+      "requisitos": "...",
+      "pass": "No tiene",
+      "categorias": ["b-r","supervivencia", "multijugador", "arcade","accion","casual"],
+      "link": "https://ouo.io/EBLUYo"
+    },
+    {
+      "id": "alice-madness-returns",
+      "titulo": "Alice madness returns",
+      "fecha": "10-04-25",
+      "version": "...",
+      "peso": "5.60 GB",
+      "plataforma": "PC",
+      "descripcion": "Alice: Madness Returns es un videojuego de plataformas y acción con toques góticos desde una perspectiva en tercera persona, con ataques y combos fáciles de usar parecidos a las series de Devil May Cry y a Splatterhouse de 2010. La diferencia es que no se pueden ejecutar combos de ataque aéreos.",
+      "imagen": "assets/alicemadness.jpg",
+      "requisitos": "...",
+      "pass": "No tiene",
+      "categorias": ["b-r","terror", "plataforma", "accion","aventura"],
+      "link": "https://ouo.io/EBLUYo"
+    },
+    {
       "id": "schedule-i",
       "titulo": "Schedule I",
       "fecha": "10-04-25",
