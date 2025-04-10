@@ -297,7 +297,7 @@ main h2 {
 }
 
 .boton-descarga:hover {
-    background-color: var(--color-principal);
+    background-color: rgb(59, 49, 201);
     color: white;
 }
 
