@@ -342,8 +342,8 @@ footer {
 .redes-sociales {
     display: flex;
     flex-direction: column;
-    border-left: 3px solid rgba(117, 117, 117, 0.068);
-    padding-left: 30px;
+    border-left: 3px solid var(--color-principal);
+    padding-left: 40px;
     gap: 15px;
 }
 
@@ -465,3 +465,6 @@ footer {
     color: white;
 }
 
+#disqus_thread {
+    width: 70%;
+}
