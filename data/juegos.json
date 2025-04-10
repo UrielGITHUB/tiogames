@@ -35,5 +35,17 @@
       "pass": "No tiene",
       "categorias": ["b-r","accion"],
       "link": "https://playpaste.com/?v=jMgC"
+    },
+    {
+      "id": "doom3",
+      "titulo": "Doom 3",
+      "fecha": "10-04-25",
+      "version": "...",
+      "descripcion": "Se trata de un juego basado en hechos históricos pero desde la perspectiva de misiones de primera persona. Las misiones varían desde la infiltración en un submarino U-Boot hasta destruir los planes de Hitler para crear su propia bomba atómica en Noruega.",
+      "imagen": "assets/capsule_616x353.jpg",
+      "requisitos": "...",
+      "pass": "No tiene",
+      "categorias": ["b-r","accion"],
+      "link": "https://playpaste.com/?v=jMgC"
     }
 ]
