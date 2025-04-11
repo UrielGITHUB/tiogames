@@ -89,6 +89,11 @@ header ul li a:hover {
     height: auto;
 }
 
+.sub {
+    display: flex;
+    flex-direction: row;
+}
+
 /* BUSCADOR */
 .input-buscador {
     width: 350px;
@@ -291,6 +296,13 @@ main h2 {
 
 .game {
     padding: 50px 50px;
+}
+
+.link-discord {
+    background-color: var(--color-principal);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 /* ======================= */
