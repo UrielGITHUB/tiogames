@@ -5,7 +5,9 @@
 }
 
 /* RESET GENERAL */
-* {
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +24,7 @@ ul {
     display: flex;
 }
 
-img {
+img, button {
     display: block;
 }
 
@@ -36,21 +38,25 @@ a {
 /* =================================== */
 
 .container {
-    max-width: 1280px;
     width: 100%;
+    height: auto;
+}
+
+.sub-container {
+    padding: 0 20px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    padding: 0 20px;
+    max-width: 1280px;
 }
 
 /* ======================= */
 /* ======= HEADER ======== */
 /* ======================= */
 
-header {
+.container-header {
     width: 100%;
     background-color: #1a1e25;
     top: 0;
@@ -59,25 +65,25 @@ header {
     border-bottom: 3px solid #212730;
 }
 
-header form {
+.container-header form {
     width: auto;
 }
 
-header ul {
+.container-header ul {
     display: flex;
     gap: 30px;
 }
 
-header ul li a {
+.container-header ul li a {
     font-size: 16px;
     font-weight: bold;
 }
 
-header ul li a:hover {
+.container-header ul li a:hover {
     text-decoration: underline;
 }
 
-.header-div {
+.header-box {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -97,11 +103,17 @@ header ul li a:hover {
 .container-nav {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+}
+
+.sub-container-nav {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
 }
 
-.container-nav ul li a {
+.sub-container-nav ul li a {
     font-size: 15px;
 }
 
@@ -117,14 +129,6 @@ header ul li a:hover {
     background-color: rgba(0, 0, 0, 0.247);
     color: rgb(255, 255, 255);
     border: 0px solid var(--color-principal);
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
 }
 
 #search-active {
@@ -153,11 +157,39 @@ nav {
 /* ====== ETIQUETAS ====== */
 /* ======================= */
 
+.div-navegacion {
+    width: 100%;
+    background-color: #1a1e25;
+}
+
+.sub-div-navegacion {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#open-categorias, #open-requisitos {
+    padding: 15px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open-categorias:hover, #open-requisitos:hover {
+    background-color: #212730;
+}
+
 .filtros-categorias {
     background-color: var(--back-color);
     padding: 40px 50px;
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .filtros-categorias ul {
@@ -280,6 +312,14 @@ main h2 {
 /* ==== JUEGO INDIVIDUAL ==== */
 /* ========================== */
 
+.main-principal {
+    padding: 50px 0;
+}
+
+.main-principal-juego {
+    padding: 50px 0;
+}
+
 #contenedor-juego {
     display: flex;
     flex-direction: column;
@@ -295,6 +335,7 @@ main h2 {
 
 #contenedor-juego img {
     margin: 30px 0;
+    width: 100%;
 }
 
 #contenedor-juego h3 {
@@ -460,35 +501,6 @@ footer {
     color: #333;
 }
 
-/* ======================= */
-/* ===== AVISO BUGS ====== */
-/* ======================= */
-
-.aviso {
-    width: 100%;
-    padding: 10px 50px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.aviso p {
-    font-size: 15px;
-}
-
-.aviso button {
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 7px 20px;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 /* ======================== */
 /* ===== BOTON SUBIR ====== */
 /* ======================== */
@@ -532,10 +544,19 @@ footer {
 .aside-right {
     padding: 0px 0px;
     margin-left: 0;
+    width: 100%;
 }
 
 #juegos-container {
     grid-template-columns: repeat(4, 1fr);
+}
+
+#contenedor-juego {
+    width: 100%;
+}
+
+.game {
+    width: 100%;
 }
 }
 
@@ -556,7 +577,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.container-nav, .input-buscador {
+.sub-container-nav, .input-buscador {
     display: none;
 }
 
@@ -587,16 +608,16 @@ footer {
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
+
+#disqus_thread {
+    width: 100%;
+}
 }
 
 /* Estilos para pantallas más pequeñas (hasta 520px) */
 @media (max-width: 520px) {
 .filtros-categorias {
     display: none;
-}
-
-.main-principal {
-    padding: 50px 0;
 }
 
 .sub-footer {

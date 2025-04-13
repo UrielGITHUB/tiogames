@@ -137,17 +137,6 @@ btn.addEventListener('click', () => {
 });
 });
 
-
-
-const boton = document.getElementById('cerrar');
-
-boton.addEventListener('click', ()=>{
-const div = document.getElementById('div');
-div.style.display = "none";
-});
-
-
-
 document.addEventListener('DOMContentLoaded', () =>{
 const btnSubir = document.getElementById("btn-subir");
 
@@ -167,3 +156,14 @@ btnSubir.addEventListener('click', () => {
 });
 });
 
+
+const btn_categorias = document.getElementById('open-categorias');
+
+btn_categorias.addEventListener('click', () => {
+  const div_categorias = document.getElementById('div-categoria')
+  if (div_categorias.style.display === "block"){
+    div_categorias.style.display = "none";
+  } else {
+    div_categorias.style.display = "block";
+  }
+});
