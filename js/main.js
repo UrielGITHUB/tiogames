@@ -34,8 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
       div.innerHTML = `
         <a href="juego.html?id=${juego.id}">
-          <img class="imagen-juego" src="${juego.imagen}" alt="${juego.titulo}">
-          <div class="back-juego"><h3>${juego.titulo}</h3></div>
+          <div class="img-juego"><img src="${juego.imagen}" alt="${juego.titulo}"></div>
+          <div class="back-juego">
+            <h3>${juego.titulo}</h3>
+            <p>Update: ${juego.fecha}</p>
+          </div>
         </a>
       `;
       contenedor.appendChild(div);

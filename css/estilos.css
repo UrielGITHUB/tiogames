@@ -259,14 +259,29 @@ main h2 {
 #juegos-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .juego {
     display: flex;
-    border-radius: 10px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 3px solid #212730;;
+}
+
+.juego:hover {
+    border-bottom: 3px solid var(--color-principal);
+}
+
+.back-juego {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 20px;
+    gap: 10px;
 }
 
 .juego a {
@@ -282,30 +297,27 @@ main h2 {
 
 .juego h3 {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 15px;
 }
 
-.back-juego {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.842) 100%);
+.img-juego {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 20px;
 }
 
-.back-juego:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+.img-juego img {
+    width: 100%;
+
+}
+
+.back-juego p {
+    font-size: 11px;
+    color: #4a5669;
 }
 
 .imagen-juego {
     width: 100%;
-    height: 100%;
     background-color: transparent;
+    padding: 10px;
 }
 
 /* ========================== */
