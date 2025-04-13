@@ -94,12 +94,14 @@ header ul li a:hover {
     height: auto;
 }
 
-.sub {
+.container-nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
-.sub ul li a {
+.container-nav ul li a {
     font-size: 15px;
 }
 
@@ -123,6 +125,28 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 35px;
+}
+
+#search-active {
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#main-active {
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 /* ======================= */
@@ -208,8 +232,6 @@ main h2 {
 
 .juego {
     display: flex;
-    min-height: 160px;
-    max-height: 160px;
     border-radius: 10px;
     overflow: hidden;
     background-color: transparent;
@@ -307,6 +329,7 @@ main h2 {
     padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 /* ======================= */
@@ -359,50 +382,52 @@ footer {
     gap: 30px;
 }
 
+.sub-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
 .links-footer,
-.redes-sociales {
+.redes-sociales,
+.navegacion {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .links-footer ul,
-.redes-sociales ul {
+.redes-sociales ul,
+.navegacion ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .links-footer ul li a,
-.redes-sociales ul li a {
+.redes-sociales ul li a,
+.navegacion ul li a {
     font-size: 15px;
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
 
 .links-footer ul li a:hover,
-.redes-sociales ul li a:hover {
+.redes-sociales ul li a:hover,
+.navegacion ul li a:hover {
     text-decoration: underline;
     color: white;
 }
 
-.redes-sociales ul {
-    text-align: left;
-}
-
-.links-footer h4, .redes-sociales h4 {
+.links-footer h4, .redes-sociales h4, .navegacion h4 {
     color: rgb(109, 108, 108);
     font-size: 15px;
     font-weight: lighter;
 }
 
-.sub-fo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 60px 60px;
-}
-
-.inf-fo {
+.inf-footer {
     text-align: center;
     color: rgb(151, 151, 151);
     font-size: 13px;
@@ -486,4 +511,127 @@ footer {
 
 #disqus_thread {
     width: 70%;
+}
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 1280px) */
+@media (max-width: 1280px) {
+.container {
+    width: 100%;
+}
+
+.main-principal {
+    flex-direction: column;
+}
+
+.aside-left {
+    width: 100%;
+}
+
+.aside-right {
+    padding: 0px 0px;
+    margin-left: 0;
+}
+
+#juegos-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+/* Estilos para pantallas más pequeñas (hasta 1080px) */
+@media (max-width: 1080px) {
+.main-principal {
+    flex-direction: column;
+}
+
+#juegos-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px)*/
+@media (max-width: 768px) {
+#juegos-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-nav, .input-buscador {
+    display: none;
+}
+
+#main-active, #search-active {
+    display: block;
+}
+
+.sub-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.inf-footer {
+    font-size: 10px;
+}
+
+.sub-footer h4 {
+    font-size: 13px;
+}
+
+.links-footer ul li a,
+.redes-sociales ul li a,
+.navegacion ul li a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+}
+
+/* Estilos para pantallas más pequeñas (hasta 520px) */
+@media (max-width: 520px) {
+.filtros-categorias {
+    display: none;
+}
+
+.main-principal {
+    padding: 50px 0;
+}
+
+.sub-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.sub-footer h4 {
+    font-size: 13px;
+}
+
+.links-footer ul li a,
+.redes-sociales ul li a,
+.navegacion ul li a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.links-footer,
+.redes-sociales,
+.navegacion {
+    gap: 9px;
+}
+
+.links-footer ul,
+.redes-sociales ul,
+.navegacion ul {
+    gap: 5px;
+}
+
+.inf-footer {
+    font-size: 11px;
+}
 }

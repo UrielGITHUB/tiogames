@@ -12,14 +12,14 @@
     <meta name="keywords" content="games, juegos, donwload, freegames, descargar, descargar juegos, juegos pc, juegos online, juegos gratis, tiogames, TioGames, tio games, Tio Games, TIO GAMES, TIOGAMES, free, juegos pirata">
     
     <!-- Open graph (para discord, facebook, etc) -->
-    <meta property="og:image" content="https://imgur.com/a/FRrFT40">
+    <meta property="og:image" content="https://i.imgur.com/HaqVpcV.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:title" content="TioGames | Inicio">
     <meta property="og:description" content="Descarga los mejores juegos totalmente gratis y libre de virus">
     <meta property="og:url" content="https://tiogames.netlify.app/">
     <meta property="og:type" content="website">
-    <meta property="og:site-name" content="TioGames">
+    <meta property="og:site_name" content="TioGames">
     <meta property="og:locale" content="es_ES">
 
     <!-- SEO -->
@@ -37,6 +37,7 @@
 
     <!-- Menu de estilos -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/icon/favicon-tiogames-logo.png" type="image/x-icon">
@@ -51,16 +52,20 @@
         <!-- Header -->
         <header>
             <div class="header-div">
-                    <a title="TioGames | Home" href="index.html"><img class="logo" src="assets/icon/logo.png"></a>
+                    <a title="TioGames | Home" href="index.html"><img class="logo" src="assets/icon/logo.png" alt="Logo de TioGames"></a>
                 <form role="search" aria-label="Buscar juegos">
                     <input type="text" id="buscador" class="input-buscador" placeholder="Buscar juegos..." />
                 </form>
                 <nav class="sub" aria-label="Navegacion principal">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#">DMCA</a></li>
-                    </ul>
-                    <a class="link-discord" href="https://discord.gg/NxuRzgxFA3">Discord</a>
+                    <div class="container-nav">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#">DMCA</a></li>
+                        </ul>
+                        <a class="link-discord" href="https://discord.gg/NxuRzgxFA3">Discord</a>
+                    </div>
+                    <button id="search-active"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="main-active"><i class="fa-solid fa-bars"></i></button>
                 </nav>
             </div>
         </header>
@@ -99,7 +104,7 @@
         <!-- /Navegacion -->
 
         <!-- Main -->
-        <main>
+        <main class="main-principal">
             <div class="aside-left">
                 <h2>Últimas actualizaciones</h2>
                 <section id="juegos-container" class="grid-container"></section>
@@ -118,7 +123,7 @@
         
         <!-- Footer -->
         <footer>
-            <div class="sub-fo">
+            <div class="sub-footer">
                 <div class="links-footer">
                     <h4>Info legal</h4>
                     <ul>
@@ -134,7 +139,7 @@
                         <li><a href="https://discord.gg/NxuRzgxFA3">Discord</a></li>
                     </ul>
                 </div>
-                <div class="redes-sociales">
+                <div class="navegacion">
                     <h4>Navegacion rapida</h4>
                     <ul>
                         <li><a href="#">Juegos</a></li>
@@ -143,7 +148,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="inf-fo">
+            <div class="inf-footer">
                 <p>© 2025 TioGames. Todos los derechos reservados.</p>
             </div>
         </footer>
